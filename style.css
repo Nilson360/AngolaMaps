@@ -1,17 +1,19 @@
+.map{
+    overflow: hidden;
+}
 .map__image{
     width: 50%;
-    height: 50%;
     float: left;
 }
 
 .map__image path{
-    fill: #a4ced2;
-    stroke: red;
-    stroke-width: 2px;
+    fill: #0B6623;
+    stroke: #fff;
+    stroke-width: 1px;
     transform: fill 0.3s;
 }
-.map__image path:hover{
-    fill: yellow;
+.map__image .is_active path{
+    fill:  #FFD700;
     cursor: pointer;
 }
 
@@ -24,4 +26,10 @@
  color: inherit;
   text-decoration: none;
   transition: color 0.3s;
+}
+
+.map__list a .is_active{
+    fill:  #FFD700;
+    font-weight: bold;
+    text-decoration: underline;
 }
