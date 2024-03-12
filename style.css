@@ -1,5 +1,7 @@
 .map{
     overflow: hidden;
+    border-width: 3px;
+    border-color: black;
 }
 .map__image{
     width: 50%;
@@ -10,11 +12,11 @@
     fill: #0B6623;
     stroke: #fff;
     stroke-width: 1px;
-    transform: fill 0.3s;
+    transition: fill 0.3s;
 }
 .map__image .is_active path{
     fill:  #FFD700;
-    cursor: pointer;
+   /* cursor: pointer;*/
 }
 
 .map__list{
@@ -28,8 +30,9 @@
   transition: color 0.3s;
 }
 
-.map__list a .is_active{
+.map__list a.is_active{
     fill:  #FFD700;
     font-weight: bold;
     text-decoration: underline;
+    font-size: 30;
 }
